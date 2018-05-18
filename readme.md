@@ -8,7 +8,7 @@
 
 Next.js is a minimalistic framework for server-rendered React applications.
 
-**Visit [learnnextjs.com](https://learnnextjs.com) to get started with Next.js.**
+**Visit [nextjs.org/learn](https://nextjs.org/learn) to get started with Next.js.**
 
 ---
 
@@ -1128,7 +1128,7 @@ Phases can be imported from `next/constants`:
 
 ```js
 const {PHASE_DEVELOPMENT_SERVER} = require('next/constants')
-module.exports = (phase, {defaultConfig}){
+module.exports = (phase, {defaultConfig}) => {
   if(phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       /* development only config options here */
@@ -1577,12 +1577,6 @@ Yes! Here's an example with [Apollo](./examples/with-apollo).
 <summary>Can I use it with Redux?</summary>
 
 Yes! Here's an [example](./examples/with-redux)
-</details>
-
-<details>
-<summary>Why aren't routes I have for my static export accessible in the development server?</summary>
-
-This is a known issue with the architecture of Next.js. Until a solution is built into the framework, take a look at [this example solution](https://github.com/zeit/next.js/wiki/Centralizing-Routing) to centralize your routing.
 </details>
 
 <details>
